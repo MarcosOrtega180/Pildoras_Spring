@@ -3,4 +3,4 @@ Desarrollo del curso de java spring del canal de YouTube píldoras informáticas
 
 ## Indicaciones
 
-1. A este proyecto fueron agregadas tolas las librerias de spring de la versión 5.1.5 disponibles aquí [Index of release/org/springframework/spring/5.1.5.RELEASE](https://repo.spring.io/release/org/springframework/spring/5.1.5.RELEASE/)
+1. A este proyecto fueron agregadas tolas las librerias de spring de la versión 5.1.5 disponibles aquí [Index of release/org/springframework/spring/5.1.5.RELEASE](https://repo.spring.io/release/org/springframework/spring/5.1.5.RELEASE/).
