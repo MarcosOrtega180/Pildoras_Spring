@@ -18,6 +18,11 @@ public class SecretarioEmpleado implements Empleados {
     public String getTareas() {
         return "Gestionar la agenda de los jefes";
     }
+
+    @Override
+    public String getInforme() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

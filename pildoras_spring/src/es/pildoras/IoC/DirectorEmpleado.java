@@ -10,7 +10,14 @@ package es.pildoras.IoC;
  * @author maros
  */
 public class DirectorEmpleado implements Empleados {
-
+    //Creación de campo tipo CreaciónInforme (interfaz)
+    private CreacionInformes informeNuevo;
+    
+    //Creación de constructor que inyecta la dependencia.
+    public DirectorEmpleado(CreacionInformes informenuevo){
+        this.informeNuevo=informenuevo;
+    };
+    
     public DirectorEmpleado() {
         
     }
@@ -19,6 +26,11 @@ public class DirectorEmpleado implements Empleados {
     public String getTareas() {
         return "Gestionar la plantilla de la empresa";
         
+    }
+
+    @Override
+    public String getInforme() {
+        return "Informe creado por el Director: "+ informeNuevo.getInforme();
     }
     
 }

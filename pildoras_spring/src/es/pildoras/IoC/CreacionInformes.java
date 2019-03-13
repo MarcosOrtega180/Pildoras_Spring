@@ -9,10 +9,6 @@ package es.pildoras.IoC;
  *
  * @author maros
  */
-public interface Empleados{
-
-    public String getTareas();
-    
+public interface CreacionInformes {
     public String getInforme();
-
 }

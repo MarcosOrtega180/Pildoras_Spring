@@ -5,6 +5,8 @@
  */
 package es.pildoras.IoC;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  *
  * @author maros
@@ -16,12 +18,22 @@ public class UsoEmpleados {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+
         //creación de objetos de tipo empleado
-        Empleados Empleado1 = new DirectorEmpleado();
-       
+//        Empleados Empleado1 = new DirectorEmpleado();
         //uso de los objetos creados
-        System.out.println(Empleado1.getTareas());
+//        System.out.println(Empleado1.getTareas());
+
+        //aplicando spring        
+        // TODO aquí cargo el xml
+        ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("/es/pildoras/IoC/applicationContext.xml");
+        
+        Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);
+        
+        System.out.println(Juan.getTareas());
+        System.out.println(Juan.getInforme());
+        //una vez utilizado el contexto, hay que cerrarlo para liberar recursos
+        contexto.close();
     }
-    
+
 }

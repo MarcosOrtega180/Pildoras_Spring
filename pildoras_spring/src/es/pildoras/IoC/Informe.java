@@ -9,10 +9,11 @@ package es.pildoras.IoC;
  *
  * @author maros
  */
-public interface Empleados{
+public class Informe implements CreacionInformes{
 
-    public String getTareas();
+    @Override
+    public String getInforme() {
+        return "Esta es la presentación del informe";
+    }
     
-    public String getInforme();
-
 }
